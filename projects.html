@@ -16,19 +16,29 @@
         <div class="project-container">
             <div class="project-tile" onclick="toggleDescription(this)">
                 <div class="project-icon">
-                    <img src="project-icon1.png" alt="Project 1">
+                    <img src="project-icon1.png" alt="Earthquake Damage Predictor">
                 </div>
-                <h2>Project Title 1</h2>
-                <p class="short-description">Short description of Project 1.</p>
+                <h2>Earthquake Damage Predictor</h2>
+                <p class="short-description">Created a model which predicts damage to buildings</p>
                 <div class="description" style="display: none;">
-                    <p>Detailed overview of Project 1. This is where you can describe the project, technologies used, challenges faced, and outcomes achieved.</p>
-                    <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+                    <p>In this competition, the objective was to predict the level of damage to buildings caused by the 2015 Gorkha earthquake in Nepal. The provided test dataset had an unlabeled target variable, so I aimed to build a model using the training dataset to accurately predict this target.
+
+                        The process involved several key steps:
+                        
+                        Data Integration: Combining multiple datasets to create a comprehensive training set.
+                        Data Cleaning: Rigorous data cleaning ensured high-quality data, addressing any inconsistencies or missing values.
+                        Feature Selection: Identifying and selecting relevant features that would contribute to effective modeling.
+                        Model Training and Evaluation: Given that the target variable represented a multiclass classification problem, I initially experimented with Decision Trees.
+                        I subsequently applied various ensemble methods, including Random Forest, LightGBM, XGBoost, and CatBoost. Ultimately, the Random Forest model emerged as the best performer, demonstrating strong predictive accuracy in assessing building damage levels.
+                        
+                        For more details, you can refer to the original competition page <a href="https://www.drivendata.org/competitions/57/nepal-earthquake/page/134/">here</a></p>
+                    <a href="https://github.com/VithushanE/Modeling-Earthquake-Damage?tab=readme-ov-file" target="_blank">View on GitHub</a>
                 </div>
             </div>
-            <!-- Repeat the project tile for each project -->
+
             <div class="project-tile" onclick="toggleDescription(this)">
                 <div class="project-icon">
-                    <img src="project-icon2.png" alt="Project 2">
+                    <img src="project-icon2.png" alt="Project Title 2">
                 </div>
                 <h2>Project Title 2</h2>
                 <p class="short-description">Short description of Project 2.</p>
@@ -41,7 +51,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024 Vithushan Esan</p>
     </footer>
 </body>
 </html>
