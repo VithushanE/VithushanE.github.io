@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    
+    <main>
+        <div class="project-container">
+            <div class="project-tile" onclick="toggleDescription(this)">
+                <div class="project-icon">
+                    <img src="project-icon1.png" alt="Project 1">
+                </div>
+                <h2>Project Title 1</h2>
+                <p class="short-description">Short description of Project 1.</p>
+                <div class="description" style="display: none;">
+                    <p>Detailed overview of Project 1. This is where you can describe the project, technologies used, challenges faced, and outcomes achieved.</p>
+                    <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <!-- Repeat the project tile for each project -->
+            <div class="project-tile" onclick="toggleDescription(this)">
+                <div class="project-icon">
+                    <img src="project-icon2.png" alt="Project 2">
+                </div>
+                <h2>Project Title 2</h2>
+                <p class="short-description">Short description of Project 2.</p>
+                <div class="description" style="display: none;">
+                    <p>Detailed overview of Project 2. Include your insights, technologies, etc.</p>
+                    <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+</body>
+</html>
