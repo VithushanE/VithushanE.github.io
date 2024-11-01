@@ -46,3 +46,26 @@ header {
     margin-top: 10px;
     text-align: left;
 }
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+}
+nav {
+    background-color: #343a40; /* Slate dark color */
+}
+.navbar-brand, .nav-link {
+    color: #ffffff !important; /* White text for links */
+}
+.nav-link:hover {
+    color: #ffc107 !important; /* Yellow hover effect */
+}
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
