@@ -6,38 +6,65 @@
     <title>My Projects</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
-</head>
-<body>
-    <header>
-        <h1>My Projects</h1>
+    <style>
+        body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f7f9fc;
+        color: #333;
+    }
+    nav {
+        background-color: #343a40; /* Slate dark color */
+    }
+    .navbar-brand, .nav-link {
+        color: #ffffff !important; /* White text for links */
+    }
+    .nav-link:hover {
+        color: #ffc107 !important; /* Yellow hover effect */
+    }
+    footer {
+        background-color: #343a40;
+        color: #ffffff;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    </style>
 
-        <nav class="navbar navbar-expand bg-light">
-            
+
+
+</head>
+
+
+<body>
+   
+        
+        <nav class="navbar navbar-expand" style="text-align: center;">
+
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand" href="https://vithushane.github.io/">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link " href="./projects.html">Projects</a>
+                        <a class="nav-link" href="./projects.html">Projects</a>
                         <a class="nav-link" href="./articles.html">Articles</a>
                     </div>
                 </div>
             </div>
         </nav>
-    </header>
 
-  
-    
+ 
     <main>
+
+        <h1 style="text-align: center;">My Projects</h1>
         <div class="project-container">
             <div class="project-tile" onclick="toggleDescription(this)">
                 <div class="project-icon">
                     <img src="./Earthquake_image.jpeg" alt="Earthquake Damage Predictor">
                 </div>
                 <h2>Earthquake Damage Predictor</h2>
-                <p class="short-description">Created a model which predicts damage to buildings</p>
+                <p class="short-description">Created a model which predicts earthquake damage to buildings</p>
                 <div class="description" style="display: none;">
                     <p>In this competition, the objective was to predict the level of damage to buildings caused by the 2015 Gorkha earthquake in Nepal. The provided test dataset had an unlabeled target variable, so I aimed to build a model using the training dataset to accurately predict this target.
                         </p>
@@ -45,7 +72,10 @@
                         The process involved several key steps:
                     </p>
                     <p>
-                        Data Integration: Combining multiple datasets to create a comprehensive training set.</p>
+                        Data Integration: Combining multiple datasets to create a comprehensive training set.
+                
+                    
+                    </p>
                      <p>Data Cleaning: Rigorous data cleaning ensured high-quality data, addressing any inconsistencies or missing values.</p>
                      <p> Feature Selection: Identifying and selecting relevant features that would contribute to effective modeling.</p>
                      <p>  Model Training and Evaluation: Given that the target variable represented a multiclass classification problem, I initially experimented with Decision Trees.</p>
@@ -61,7 +91,7 @@
                 <div class="project-icon">
                     <img src="./Bartender.png" alt="Bartender drum Cover">
                 </div>
-                <h2>Bartender Drum Cover</h2>
+                <h2></h2>
                 <p class="short-description">My drum cover of Bartender from T-Pain</p>
                 <div class="description" style="display: none;">
                     <p>Loved playing to this song. Great vocals, lyrics and overall vibes</p>
@@ -69,6 +99,9 @@
                 </div>
             </div>
         </div>
+
+
+
     </main>
 
     <footer>
