@@ -90,7 +90,7 @@
             </div>
 
 
-    <!-- PROJECT 2 -->
+    <!-- NLP 2 -->
             <div class="project-tile" onclick="toggleDescription(this)">
                 <div class="project-icon">
                     <img src="../assets/NLP_Sentiment.png" alt="NLP Sentiment Analysis">
@@ -98,7 +98,67 @@
                 <h2></h2>
                 <p class="short-description">Using NLP for Sentiment Analysis</p>
                 <div class="description" style="display: none;">
-                    <p>Loved playing to this song. Great vocals, lyrics and overall vibes</p>
+                    <p>
+                        For this project, I developed a sentiment analysis model using various supervised machine learning algorithms to classify customer reviews.
+                    </p>
+                    <p>
+                        The dataset consists of movie theater reviews, with each entry containing two columns: the first column includes the text of the review (unstructured data), while the second column contains a binary rating (1 or 0), likely indicating whether the review is positive or negative. Below is an outline of the approach I followed to build and evaluate the model.
+                    </p>
+                    
+                    <p>
+                        Step 1: Data Exploration
+                    </p>
+                    <p>
+                        After installing the necessary libraries and uploading the training and testing datasets, I began with an initial exploration of the data. This allowed me to understand the structure, quality, and distribution of the data. By examining the "Sentence" and "Polarity" columns, I gained insights into the text data (reviews) and their corresponding sentiment labels, which would guide further preprocessing and modeling decisions.
+                    </p>
+                    
+                    <p>
+                        Step 2: Modeling with Different Machine Learning Algorithms
+                    </p>
+                    <p>
+                        Next, I developed a machine learning pipeline that incorporated a variety of algorithms to predict sentiment. To prepare the data, I first split the dataset into training and testing sets. I performed this split for both the "Sentence" (features) and "Polarity" (target variable) columns. The "Polarity" column, which contains the sentiment labels (positive or negative), was used as the target variable, while the "Sentence" column provided the textual data for feature extraction.
+                    </p>
+                    
+                    <p>
+                        The machine learning algorithms included in the pipeline were:
+                    </p>
+                    <p>
+                        Logistic Regression (with L2 regularization), Decision Tree Classifier, XGBoost, CatBoost, Random Forest Classifier. These algorithms were chosen for their versatility in handling text data and their ability to deliver strong performance in classification tasks.
+                    </p>
+                    
+                    <p>
+                        Step 3: Assessing Machine Learning Models
+                    </p>
+                    <p>
+                        After training each model using the defined pipeline, I evaluated their performance through a series of metrics, focusing primarily on the confusion matrix to examine the model's classification accuracy. This step allowed me to compare the performance of each model on both the training and testing datasets.
+                    </p>
+                    
+                    <p>
+                        The use of a train/test split was crucial to avoid data leakage, ensuring that the evaluation results were unbiased and reflective of the model's ability to generalize. Despite efforts to tune the models, I found that some models exhibited signs of data leakage, highlighting the importance of careful preprocessing and cross-validation to ensure robust model performance.
+                    </p>
+                    
+                    <p>
+                        Step 4: Logistic regression with different Hyperparameter Tuning Combinations
+                    </p>
+                    <p>
+                        Ultimately, I found logistic regression to be the best performing model. I decided to go deeper by creating another ML pipeline, but this time specifically looking at lasso, ridge, and elasticnet within logistic regression. I also created separate grid search parameters for each regression and assessed each. Ultimately, Ridge regression was the best out of all the logistic regression variations.
+                    </p>
+                    
+                    <p>
+                        Step 5: Examining results from a business point of view
+                    </p>
+                    <p>
+                        The high F1 and accuracy scores on the training data indicate that the model learned from the training dataset very well. However, the drop in performance on the test dataset suggests that the model may not perform as well on unseen data, potentially due to overfitting. Hyperparameter tuning was applied to the best model after comparing it with other models.
+                    </p>
+                    
+                    <p>
+                        From a business standpoint, it is reasonable to assume that some customer feedback could be misinterpreted by the model, possibly due to variations in customers' grammar or the use of sarcasm. Given these considerations, I am satisfied with an overall accuracy of 0.76 on the testing dataset for the ridge model.
+                    </p>
+                    
+                    <p>
+                        Step 6: Visualizing Correct predictions with Label 0 and 1
+                    </p>
+                    
                     <a href="https://www.youtube.com/watch?v=oPVH-q8prYg" >View on YouTube</a>
                 </div>
             </div>
